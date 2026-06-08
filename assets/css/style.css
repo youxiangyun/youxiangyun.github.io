@@ -653,9 +653,38 @@ ul { list-style: none; }
   }
   .menu-toggle { display: flex; }
   .hero-name { font-size: 2.2rem; }
-  .hero-visual { transform: scale(0.65); }
+  .hero { min-height: auto; padding: 120px 0 60px; text-align: center; }
+  .hero-content { gap: 30px; padding-top: 0; justify-content: center; }
+  .hero-tagline { font-size: 2.2rem; letter-spacing: 3px; text-align: center; }
+  .hero-title { font-size: 1rem; letter-spacing: 2px; }
+  .hero-desc { font-size: 0.9rem; white-space: normal; text-align: center; }
+  .hero-visual { transform: scale(0.55); margin: -20px 0; }
+  .ai-circle { width: 200px; height: 200px; }
+  .scroll-indicator { display: none; }
+  .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+  .hero-btns .btn { width: 100%; max-width: 240px; text-align: center; }
   .section { padding: 60px 0; }
-  .section-title { font-size: 1.6rem; margin-bottom: 40px; }
+  .section-title { font-size: 1.5rem; margin-bottom: 32px; }
+  .about-layout { grid-template-columns: 1fr; gap: 24px; }
+  .about-photo-col { max-width: 240px; margin: 0 auto; }
+  .about-photo-frame { width: 100%; max-width: 240px; height: 240px; }
+  .about-stats { gap: 8px; }
+  .stat-number { font-size: 1.4rem; }
+  .about-cards-grid { gap: 12px; }
+  .about-cards-grid .about-card { padding: 16px; gap: 12px; }
+  .about-cards-grid .about-card h3 { font-size: 0.9rem; width: 1.8em; }
+  .about-cards-grid .about-card p { font-size: 0.82rem; }
+  .skills-content { grid-template-columns: 1fr; gap: 24px; }
+  .case-card { padding: 24px; }
+  .case-number { font-size: 2.2rem; }
+  .cases-grid, .services-grid { gap: 16px; }
+  .contact-grid { gap: 24px; }
+  .contact-info { gap: 12px; }
+  .contact-item { font-size: 0.85rem; }
+  .contact-item svg { width: 20px; height: 20px; }
+  .timeline-item { padding-left: 40px; }
+  .ai-chat-box { width: calc(100vw - 32px); right: -4px; height: 380px; }
+  .ai-fab { width: 48px; height: 48px; }
 }
 
 /* ===== 粒子 ===== */
