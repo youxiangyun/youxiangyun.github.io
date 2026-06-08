@@ -409,12 +409,21 @@ document.addEventListener('DOMContentLoaded', function() {
       if (oldFeedback) oldFeedback.remove();
 
       try {
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        const feedback = document.createElement('div');
-        feedback.className = 'form-feedback success';
-        feedback.textContent = i18n[getLang()]['form.success'];
-        this.appendChild(feedback);
-        this.reset();
+        const formData = new FormData(this);
+        const response = await fetch(this.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          const feedback = document.createElement('div');
+          feedback.className = 'form-feedback success';
+          feedback.textContent = i18n[getLang()]['form.success'];
+          this.appendChild(feedback);
+          this.reset();
+        } else {
+          throw new Error('Formspree error');
+        }
       } catch (err) {
         const feedback = document.createElement('div');
         feedback.className = 'form-feedback error';
