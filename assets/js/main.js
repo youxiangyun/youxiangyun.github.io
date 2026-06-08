@@ -325,11 +325,16 @@ document.addEventListener('DOMContentLoaded', function() {
       const moon = themeToggle.querySelector('.theme-icon-moon');
       const sun = themeToggle.querySelector('.theme-icon-sun');
       if (moon && sun) {
-        moon.style.display = theme === 'dark' ? 'block' : 'none';
-        sun.style.display = theme === 'dark' ? 'none' : 'block';
+        moon.style.display = theme === 'dark' ? '' : 'none';
+        sun.style.display = theme === 'dark' ? 'none' : '';
       }
       themeToggle.title = theme === 'dark' ? '切换亮色模式' : '切换暗色模式';
     }
+
+    // 初始化主题
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcons(savedTheme);
 
     themeToggle.addEventListener('click', function() {
       const html = document.documentElement;
@@ -339,11 +344,6 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('theme', newTheme);
       updateThemeIcons(newTheme);
     });
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      document.documentElement.setAttribute('data-theme', savedTheme);
-      updateThemeIcons(savedTheme);
-    }
   }
 
   // 语言切换
