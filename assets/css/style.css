@@ -132,7 +132,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: flex-end;
   height: 70px;
-  max-width: 100%;
+  width: 100%;
   padding-right: 24px;
 }
 .nav-logo {
