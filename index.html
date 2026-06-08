@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark" data-lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人简历 - AI 产品经理 / AI 训练师，九年供应链采购经验 帮助企业降本增效">
+  <title>游祥云 | 供应链管理运营专家</title>
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="nav-right">
+        <ul class="nav-menu">
+          <li><a href="#about" data-i18n="nav.about">自我介绍</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">核心能力</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">工作经历</a></li>
+          <li><a href="#cases" data-i18n="nav.cases">落地案例</a></li>
+          <li><a href="#services" data-i18n="nav.services">服务模式</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">联系方式</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button class="control-btn lang-toggle" id="langToggle" title="English">EN</button>
+          <button class="control-btn theme-toggle" id="themeToggle" title="切换亮色模式">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <button class="control-btn menu-toggle" id="menuToggle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="particle-container" id="particles"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-tagline" data-i18n="hero.tagline">游祥云</p>
+        <p class="hero-title" data-i18n="hero.title">供应链管理运营专家</p>
+        <p class="hero-desc" data-i18n="hero.desc">九年供应链管理运营经验，帮助企业降本增效、构建高效运营体系</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.btnContact">联系我</a>
+          <a href="#" class="btn btn-outline" id="resumeBtn" data-i18n="hero.btnResume">下载简历</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="ai-circle">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+          <div class="center-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.5">
+              <path d="M12 2a4 4 0 0 1 4 4c0 2-2 4-4 4s-4-2-4-4a4 4 0 0 1 4-4z"/>
+              <path d="M12 14c-3.87 0-7 1.79-7 4v2h14v-2c0-2.21-3.13-4-7-4z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span data-i18n="hero.scroll">向下滚动</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">自我介绍</h2>
+      <div class="about-layout">
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <img src="assets/img/photo.jpg" alt="游祥云" class="about-photo">
+            <div class="about-photo-glow"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="9">0</span>
+              <span class="stat-unit">年+</span>
+              <span class="stat-label" data-i18n="about.stat1">行业经验</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-unit">亿+</span>
+              <span class="stat-label" data-i18n="about.stat2">采购规模</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="1500">0</span>
+              <span class="stat-unit">+</span>
+              <span class="stat-label" data-i18n="about.stat3">合作品牌</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+            </div>
+            <h3 data-i18n="about.who">个人<br>简介</h3>
+            <p data-i18n="about.desc">从事九年供应链采购工作，拥有丰富的供应商管理、采购策略与产品开发经验。善于供应商开发与维护，具备全面的采购控制能力，能够独立进行采购活动并推动供应链体系优化。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 data-i18n="about.mission">职业<br>使命</h3>
+            <p data-i18n="about.missionDesc">用专业的供应链管理能力，帮助企业构建高效、稳定、低成本的供应体系，让采购成为企业的核心竞争力。</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 data-i18n="about.value">核心<br>价值</h3>
+            <p data-i18n="about.valueDesc">供应链采购中最懂产品的、最懂运营的、最懂AI落地的复合型人才，致力于用技术与专业驱动企业增长。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心能力 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skills.title">核心能力</h2>
+      <div class="skills-content">
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skills.pm">核心能力</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.pm1">供应链体系搭建（0→1）</span><div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.pm2">数据分析与市场研判</span><div class="skill-bar"><div class="skill-progress" style="width:92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.pm3">采购策略与成本控制</span><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.pm4">供应商开发与管理</span><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skills.trainer">综合能力</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.tr1">商务拓展与谈判</span><div class="skill-bar"><div class="skill-progress" style="width:92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.tr2">团队管理与KPI拆解</span><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.tr3">产品全生命周期管理</span><div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name" data-i18n="skills.tr4">跨部门协调与项目落地</span><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作经历 -->
+    <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-i18n="exp.title">工作经历</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date1">2025.02 - 2025.09</span>
+              <h3 data-i18n="exp.company1">居然设计家（北京）科技有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role1">BD-商务拓展（部门副职）</span>
+            </div>
+            <ul data-i18n="exp.detail1">
+              <li>供应链团队管理：主导部门经营管理会议，拆解团队KPI并制定可落地业务方案</li>
+              <li>平台招商：半年内引入45家行业领先品牌，完成平台品牌体系从0到1的搭建</li>
+              <li>3D智能导购落地：带领团队对标杆门店落地实施，培训赋能一线导购员</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date2">2023.06 - 2024.09</span>
+              <h3 data-i18n="exp.company2">爱空间科技（北京）有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role2">产品采购运营主管</span>
+            </div>
+            <ul data-i18n="exp.detail2">
+              <li>采购开发：负责华北四城配套产品开发上线，落地断桥铝窗、防盗门等五类产品</li>
+              <li>产品落地：引入新品类合作，输出培训资料、产品手册，对团队进行培训赋能</li>
+              <li>区域采购：华北四城材料采销，协调产品售中售后问题</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date3">2022.08 - 2023.06</span>
+              <h3 data-i18n="exp.company3">北京小熊快跑传媒有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role3">采购经理</span>
+            </div>
+            <ul data-i18n="exp.detail3">
+              <li>MCN机构选品：负责泛生活品类选品，制定选品策略与投放ROI策略</li>
+              <li>根据KOL IP特点规划全年产品开发计划，产品毛利从15%提升至40%</li>
+              <li>引入多个新品类，全年GMV上涨20%</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date4">2022.04 - 2022.08</span>
+              <h3 data-i18n="exp.company4">北京水木优品装饰有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role4">供应链经理</span>
+            </div>
+            <ul data-i18n="exp.detail4">
+              <li>搭建卖场软装产品与供应链产品体系，建立质量标准与零售运营工具</li>
+              <li>通过开源供应商与产品溯源，降低采购成本20%，提升产品品质</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date5">2020.09 - 2022.04</span>
+              <h3 data-i18n="exp.company5">曲美家居集团股份有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role5">采购开发</span>
+            </div>
+            <ul data-i18n="exp.detail5">
+              <li>制定采购策略，主导工厂寻源、选品、管理、考核全流程</li>
+              <li>产品全生命周期管理，年采购额达2亿元，单品月销售3万+</li>
+              <li>建立产品品质监控体系，从生产到入库全流程把控</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date6">2018.05 - 2020.08</span>
+              <h3 data-i18n="exp.company6">艺格工装（北京）科技有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role6">采购经理</span>
+            </div>
+            <ul data-i18n="exp.detail6">
+              <li>开发爆款产品，完成休闲家具软装库从0到1搭建</li>
+              <li>创新提出询价字典概念并落地，显著提升中后台工作效率</li>
+              <li>核算产品BOM，阶段性争取产品利润最大化</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date" data-i18n="exp.date7">2016.07 - 2018.05</span>
+              <h3 data-i18n="exp.company7">北京苹果装饰设计有限公司</h3>
+              <span class="timeline-role" data-i18n="exp.role7">采购专员</span>
+            </div>
+            <ul data-i18n="exp.detail7">
+              <li>根据图纸精算量核算成本，控制项目增项成本</li>
+              <li>项目跟单：协调主材进场时间，保证工程按期完成</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI 落地案例 -->
+    <!-- 工作成绩 -->
+  <section class="section section-alt" id="cases">
+    <div class="container">
+      <h2 class="section-title" data-i18n="cases.title">工作成绩</h2>
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-number">01</div>
+          <h3 data-i18n="cases.c1Title">平台品牌体系 0→1</h3>
+          <p data-i18n="cases.c1Desc">半年内引入45家行业领先品牌，完成平台品牌体系从0到1的搭建，核心目标品类100%覆盖。支持AI设计工具、3D智能导购等AI项目落地，品牌上传SKU 10万+，实现AI生图基本能力。</p>
+          <div class="case-metrics"><span data-i18n="cases.c1Metric">引入45+品牌 · 10万+SKU</span></div>
+        </div>
+        <div class="case-card">
+          <div class="case-number">02</div>
+          <h3 data-i18n="cases.c2Title">3D智能导购落地</h3>
+          <p data-i18n="cases.c2Desc">推动3D智能导购在终端门店落地，树立慕斯、芝华仕、顾家、方太等10+品牌标杆，帮助品牌提升销售转化。搭载AI生效果图能力，实现智能化的产品展示与导购体验。</p>
+          <div class="case-metrics"><span data-i18n="cases.c2Metric">覆盖10+标杆品牌 · AI生效果图</span></div>
+        </div>
+        <div class="case-card">
+          <div class="case-number">03</div>
+          <h3 data-i18n="cases.c3Title">供应链降本增效</h3>
+          <p data-i18n="cases.c3Desc">通过开源供应商与产品溯源调整供应链采购逻辑，降低采购成本20-40%，同时提升产品品质达到一线品牌标准。</p>
+          <div class="case-metrics"><span data-i18n="cases.c3Metric">成本降低20-40%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务模式 -->
+    <!-- 服务模式 -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.title">服务模式</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 data-i18n="services.s1Title">供应链体系搭建</h3>
+          <p data-i18n="services.s1Desc">从0到1搭建企业供应链体系，包括供应商开发、品类规划、采购策略制定</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3 data-i18n="services.s2Title">产品运营</h3>
+          <p data-i18n="services.s2Desc">通过产品全生命周期管理、品类规划与市场分析，持续优化产品结构与运营效率</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 data-i18n="services.s3Title">团队管理与培训</h3>
+          <p data-i18n="services.s3Desc">供应链团队搭建与管理，采购流程培训，帮助团队快速提升专业能力</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 教育背景 -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title" data-i18n="edu.title">教育背景</h2>
+      <div class="edu-card">
+        <div class="edu-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="edu-info">
+          <h3>黑龙江建筑职业技术学院</h3>
+          <p class="edu-major" data-i18n="edu.major">工程造价（土木装饰方向）</p>
+          <p class="edu-date" data-i18n="edu.date">2012.09 - 2015.06</p>
+        </div>
+      </div>
+      <div class="edu-cert">
+        <span class="cert-badge" data-i18n="edu.cert">IPMP 国际项目管理证书</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact.title">联系方式</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="contact-label">邮箱：</span><span>1010215355@qq.com</span>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span class="contact-label">电话：</span><span>15710033789</span>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.7 4.69L4 17.5l3.3-1.65c.7.2 1.44.34 2.2.4" stroke-linecap="round"/><path d="M14 10c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zM18 10c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z" stroke-linecap="round"/><path d="M18.5 13c-1.93 0-3.5 1.34-3.5 3s1.57 3 3.5 3c.38 0 .75-.05 1.1-.14L22 20l-.63-2.07A3.24 3.24 0 0 0 22 16c0-1.66-1.57-3-3.5-3z" stroke-linecap="round"/></svg>
+            <span class="contact-label">微信：</span><span>15710033789</span>
+          </div>
+          <div class="contact-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="contact-label">地址：</span><span>中国 · 北京</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" name="name" placeholder="您的姓名" required data-i18n-placeholder="contact.formName">
+          <input type="email" name="email" placeholder="您的邮箱" required data-i18n-placeholder="contact.formEmail">
+          <textarea name="message" rows="5" placeholder="请输入留言内容..." required data-i18n-placeholder="contact.formMsg"></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">发送留言</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 游祥云. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js?v=2"></script>
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>
