@@ -410,17 +410,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 简历下载
-  const resumeBtn = document.getElementById('resumeBtn');
-  if (resumeBtn) {
-    resumeBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const msg = getLang() === 'zh' 
-        ? '请将简历 PDF 文件命名为 "游祥云简历.pdf" 并放置在与 index.html 同级的目录中。'
-        : 'Please place your CV PDF file named "YouXiangyun_CV.pdf" in the same directory.';
-      alert(msg);
-    });
-  }
+
 
   console.log('🚀 游祥云个人网站 - 交互已全部加载');
 });
