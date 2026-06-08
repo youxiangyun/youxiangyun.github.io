@@ -130,7 +130,7 @@ ul { list-style: none; }
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: 70px;
 }
 .nav-logo {
@@ -951,7 +951,7 @@ ul { list-style: none; }
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-  margin-left: auto;
+
 }
 .ai-fab:hover {
   transform: scale(1.1);
