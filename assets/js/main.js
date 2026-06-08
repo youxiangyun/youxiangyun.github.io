@@ -321,15 +321,29 @@ document.addEventListener('DOMContentLoaded', function() {
   // 主题切换
   const themeToggle = document.getElementById('themeToggle');
   if (themeToggle) {
+    function updateThemeIcons(theme) {
+      const moon = themeToggle.querySelector('.theme-icon-moon');
+      const sun = themeToggle.querySelector('.theme-icon-sun');
+      if (moon && sun) {
+        moon.style.display = theme === 'dark' ? 'block' : 'none';
+        sun.style.display = theme === 'dark' ? 'none' : 'block';
+      }
+      themeToggle.title = theme === 'dark' ? '切换亮色模式' : '切换暗色模式';
+    }
+
     themeToggle.addEventListener('click', function() {
       const html = document.documentElement;
       const currentTheme = html.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
+      updateThemeIcons(newTheme);
     });
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      updateThemeIcons(savedTheme);
+    }
   }
 
   // 语言切换
