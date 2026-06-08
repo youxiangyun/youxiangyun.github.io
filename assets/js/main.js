@@ -222,33 +222,7 @@ document.addEventListener('DOMContentLoaded', function() {
   aiSendBtn.addEventListener('click', sendMessage);
   aiInput.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
 
-  // ===================== 4. 打字机效果 ====================
-  function typeWriter(element, text, speed = 30) {
-    element.textContent = '';
-    let i = 0;
-    function type() {
-      if (i < text.length) {
-        element.textContent += text.charAt(i);
-        i++;
-        setTimeout(type, speed);
-      }
-    }
-    type();
-  }
 
-  // Hero 区域打字机效果
-  const heroDesc = document.querySelector('.hero-desc');
-  if (heroDesc) {
-    const fullText = heroDesc.textContent;
-    heroDesc.textContent = '';
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        typeWriter(heroDesc, fullText, 25);
-        observer.unobserve(heroDesc);
-      }
-    }, { threshold: 0.5 });
-    observer.observe(heroDesc);
-  }
 
   // ===================== 5. 数字滚动计数 ====================
   function animateCounter(el, target, suffix = '') {
