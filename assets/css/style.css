@@ -130,24 +130,13 @@ ul { list-style: none; }
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   height: 70px;
-  width: 100%;
-  padding-right: 24px;
 }
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--accent) !important;
-  text-decoration: none;
-}
-.nav-logo svg {
-  flex-shrink: 0;
-}
-.nav-logo-text {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  color: var(--accent) !important;
 }
 .nav-right {
   display: flex;
@@ -953,7 +942,7 @@ ul { list-style: none; }
   transition: all 0.3s ease;
   position: relative;
   z-index: 2;
-
+  margin-left: auto;
 }
 .ai-fab:hover {
   transform: scale(1.1);
