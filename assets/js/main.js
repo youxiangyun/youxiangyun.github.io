@@ -251,20 +251,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   statNumbers.forEach(el => statObserver.observe(el));
 
-  // ===================== 6. 视差滚动效果 ====================
-  const parallaxElements = document.querySelectorAll('.section-title, .case-card, .service-card, .about-card');
-  
-  window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    
-    // Hero 区域的视差
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent && scrolled < window.innerHeight) {
-      heroContent.style.transform = `translateY(${scrolled * 0.15}px)`;
-      heroContent.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
-    }
-  }, { passive: true });
-
   // ===================== 7. 卡片 3D 悬浮倾斜效果 ====================
   document.querySelectorAll('.case-card, .service-card, .about-card').forEach(card => {
     card.addEventListener('mousemove', e => {
