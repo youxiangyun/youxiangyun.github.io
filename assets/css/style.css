@@ -367,7 +367,7 @@ ul { list-style: none; }
 /* ===== 核心能力 ===== */
 .skills-content {
   display: grid;
-  grid-template-columns: 4fr 6fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 .skill-group-title {
